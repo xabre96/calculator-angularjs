@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Grumpy Calculator</title>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="border" ng-app="myApp" ng-controller="myCtrl">
+           
+            <section>
+                <header>
+                    <input type="text" id="display" ng-model="display" disabled=""/>
+                    <br/>
+                    <button id="reset" ng-click="reset()">C</button>
+                    <button id="reset2">CE</button>
+                    <button id="del" ng-click="del()">del</button>
+                    <button class="operator" id="divide" ng-click="operator('/')">/</button>
+                </header>
+                <main>
+                    <div class="main">
+                        <button class="num" id="num7" value="7" ng-click="numButton(7)">7</button>
+                        <button class="num" id="num8" value="8" ng-click="numButton(8)">8</button>
+                        <button class="num" id="num9" value="9" ng-click="numButton(9)">9</button>
+                        <button class="operator" id="add" ng-click="operator('+')">+</button>
+                    </div>
+                    <div class="main">
+                        <button class="num" id="num4" ng-click="numButton(4)">4</button>
+                        <button class="num" id="num5" ng-click="numButton(5)">5</button>
+                        <button class="num" id="num6" ng-click="numButton(6)">6</button>
+                        <button class="operator" id="subtract" ng-click="operator('-')">-</button>
+                    </div>
+                    <div class="main">
+                        <button class="num" id="num1" ng-click="numButton(1)">1</button>
+                        <button class="num" id="num2" ng-click="numButton(2)">2</button>
+                        <button class="num" id="num3" ng-click="numButton(3)">3</button>
+                        <button class="operator" id="multiply" ng-click="operator('*')">*</button>
+                    </div>
+                    <div>
+                        <button class="zero" id="num0" ng-click="numButton(0)">0</button>
+                        <button id="equals" ng-click="compute()">=</button>
+                        <button id="decimal" ng-click="decimal()">.</button>
+                    </div>
+                </main>
+            </section>
+        </div>
+
+        <h3>The Grumpy Calculator</h3>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+Author: Xan Gutierrez
+Date: 15-07-16
+-->
